@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Aria, sans-serif;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+   
+   
+}
+
+#container{
+     background-image: url(assets/background-profile.jpg);
+     width: 100%;
+     height: 100vh;
+    padding-top: 140px;
+    text-align: center;
+
+
+}
+
+.profile{ 
+    width: 80px;
+    margin-top: 40px;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+
+p{
+  color: rgb(57, 55, 55);
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#header{
+    display: inline-block;        
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border-radius: 10px;
+    background: rgba(255, 247, 247, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+    /* transition: transform 0.5s ease, filter 0.5 ease, filter 0.5 ease;
+     */
+    
+
+}
+
+#link a:hover img{
+    transition: transform scale(1.1) rotate( 1deg);
+    filter: brightness(1.2) contrast(1.1);
+}
+#link a:hover {
+    transform: translateY(-5px);
+}
+
+.hero{
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 60px;
+    color: rgb(36, 35, 35);
+     overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(28, end) 1, forwards, blink 0.7s infinite;
+    animation-delay: 0s,4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes typing {
+    from {width:0 }
+    to { width: 17em }
+
+} 
+
+@keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: #00ffcc}
+}
+
+#link{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 70px;
+    
+}
+
